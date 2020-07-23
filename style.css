@@ -1,0 +1,293 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    height: 30px;
+}
+
+header #logo{
+    width: 20px;
+    margin: 5px 5px 0px 10px;
+}
+header span{
+    display: inline-block;
+    margin: 7px 0px;
+    font-size: 14px;
+}
+
+ul{
+    display: flex;
+}
+
+ul#arrows{
+    float: left;
+    margin-right: 20px;
+}
+
+ul#mainMenu{
+    float: left
+}
+
+ul#rightMenu{
+    float: right;
+}
+
+nav{
+    background-color: #F5F6F8;
+    display: block;
+    height: 40px;
+    border: 1px solid #E4E9F2;
+}
+
+nav ul li{
+    font-size: 12px;
+    line-height: 38px;
+    color: #797979;
+    padding: 0px 15px;
+}
+
+nav ul#arrows li{
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+nav ul li:hover{
+    color: black;
+    background: #EEF0F2;
+}
+
+nav ul#arrows li, nav ul#rightMenu li{
+    border-right: 1px solid #E4E9F2;
+}
+
+nav ul#arrows li:hover{
+    color: #797979;
+}
+
+nav ul#rightMenu li img{
+    width: 30px;
+    padding-top: 5px;
+}
+
+nav ul#rightMenu li img#settings{
+    width: 20px;
+    padding-top: 10px;
+}
+
+nav ul#rightMenu li input{
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #52B700;
+    padding: 0px 10px;
+}
+
+nav ul#rightMenu li:hover{
+    color: #797979;
+}
+
+nav ul#rightMenu li input:hover{
+    background-color: #11A206;
+}
+
+nav ul#rightMenu li#input:hover{
+    background-color: #F5F6F8;
+}
+
+aside{
+    float: left;
+    width: 300px;
+    border-right: 1px solid #E4E9F2;
+    height: 89%;
+}
+
+aside #subMenu img{
+    padding: 5px 20px;
+}
+
+aside div#dialogs div#ais{
+    background-color: #EDF4F6;
+}
+
+aside div#dialogs {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 475px;
+}
+
+div#subMenu{
+    height: 59px;
+}
+
+div#search{
+    height: 49px;
+    padding: 10px 25px;
+    border-top: 1px solid #E4E9F2;
+}
+
+div#search input{
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #F5F6F8;
+    background-image: url(img/loupe1.png); 
+    background-repeat: no-repeat;
+    background-position: 10px; 
+    padding-left: 40px; 
+    border: 1px solid #F5F6F8;
+}
+
+div#search input:focus{
+    background-color: #FFFFFF;
+    border: #9C90DD 1px solid;
+}
+
+main{
+    margin-left: 300px;
+}
+
+div#head{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #E4E9F2;
+    padding: 5px 10px 0px 10px;
+}
+
+div#head img#ais{
+    float: left;
+}
+
+div#head p{
+    padding-top: 5px;
+    padding-left: 70px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+div#head p a{
+    font-size: 12px;
+    color: #8B60F4;
+}
+
+div#head p a:hover{
+    text-decoration: underline;
+}
+
+div#head div#info{
+    float: left;
+}
+
+div#head div#icons{
+    float: right;
+}
+
+div#dialogs{
+    border-top: 1px solid #E4E9F2;
+}
+
+div#dialogs div.dialog{
+    height: 75px;
+    border-bottom: 1px solid #E4E9F2;
+    padding: 10px 10px;
+}
+
+div#dialogs div.dialog span.name{
+    display: inline-block;
+    padding: 5px;
+    font-weight: 700;
+}
+
+div#dialogs div.dialog span.time{
+    padding: 5px;
+    font-size: 10px;
+    color: #797979;
+    float: right;
+    padding-top: 10px;
+}
+
+main div#inputField{
+    border-top: 1px solid #E4E9F2;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: white;
+} 
+
+main div#inputField #lefticons{
+    float: left;
+    padding: 10px 0px 0px 10px;
+}
+
+main div#inputField input{
+    padding: 15px 0px 0px 20px;
+    width: 900px;
+    float: left;
+}
+
+main div#communication{
+    overflow-y: scroll;
+    max-height: 475px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E4E4E4;
+    border-radius: 5px;
+}
+
+main div#communication{
+    display: flex;
+    flex-direction: column;
+}
+
+main div#communication div.others{
+    padding: 10px 90px;
+}
+
+main div#communication div.others img{
+    margin-top: 10px;
+}
+
+main div#communication span.time {
+    float: right;
+    font-size: 12px;
+    color: #797979;
+}
+
+main div#communication p.message{
+    display: inline-block;
+    min-height: 30px;
+    max-width: 400px;
+    border-radius: 0px 20px 20px 20px;
+    background-color: #EFEFEF;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: justify;
+}
+
+main div#communication div.others p.message span.nameMessage{
+    display: block;
+    color:#A589D6;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+main div#communication div.me{
+    margin-right: 90px;
+}
+
+main div#communication div.me p.message{
+    border-radius: 20px 0px 20px 20px;
+    background-color: #D8EBFF;
+    float: right;
+}
